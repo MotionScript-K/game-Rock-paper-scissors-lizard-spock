@@ -1,0 +1,130 @@
+:root{
+    --imgObjectGame: url("img/r1.jpg");
+    --imgObjectTarget: url("");
+}
+body,
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.line{
+    position: relative;
+    width: 400px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #000;
+}
+.players{
+    position: relative;
+    width:300px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+.resBox{
+    position: relative;
+    margin-top: 15px;
+    width:300px;
+    height:50px;
+    display: flex;
+}
+.resBox1{
+    position: relative;
+    width:150px;
+    height:50px;
+}
+.resBox1 h1{
+    padding:0;
+    margin:0;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+.restartBtn{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+.rules{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url("img/rul.jpg");
+}
+.rulesText{
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+.playerBox{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    align-items: center;
+}
+.playerTarget{
+    position: relative;
+    width:300px;
+    height: 52px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.cardBox{
+    position:relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: var(--imgObjectGame);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cardBox:hover{
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.playerImg{
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background: url("img/player.jpg");
+}
+.iiImg{
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background: url("img/ii.jpg");
+}
+.scoreBox{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.objectScore{
+    position: relative;
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background: var(--imgObjectTarget);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
